@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="→"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-105dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g:x = "
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textScaleX="0.4"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <EditText
+                android:id="@+id/v1_1"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/v1_2"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/v1_1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:lines="1"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v1_3"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v1_2"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textScaleX="0.4"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ t"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textScaleX="0.4"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <EditText
+                android:id="@+id/v2_1"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:lines="1"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v2_2"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/v2_1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:lines="1"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v2_3"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/v2_2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:lines="1"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textScaleX="0.4"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_berechnen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berechnen"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zurücksetzen" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/syz"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/sxz"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/sxy"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+</LinearLayout>

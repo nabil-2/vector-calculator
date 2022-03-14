@@ -1,0 +1,16 @@
+-Matrix/LGS Fragment
+- Kreuzprodukt kürzen
+-startseite
+//spurpunkt-gerade: bug beheben wenn kein Spurpunkt vorhanden
+-gerade-kugel
+-ebene formumwandler
+-ebene-ebene
+-ebene-kugel
+-kugel-kugel
+-kugel-gerade
+-Matrix-Vektor Produkt
+-Matrix addieren/multipilzieren
+-überarbeiten und vereinheitlichen
+-englisch
+-querformat
+-vllt noch darkmode

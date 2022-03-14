@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Vektorrechner</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Vektorrechner</string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">Über</string>
+
+    <string name="menu_laenge">Länge Berechnen</string>
+    <string name="menu_vektorAddieren">Vektoren Grundrechenarten</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_vektorenMultiplizieren">Vektoren Kreuzmultipilzieren</string>
+    <string name="menu_skalar">Skalarprodukt</string>
+    <string name="menu_fehlendeKoor">Fehlende Koordinate Berechnen</string>
+    <string name="menu_spiegelpunkte">Spiegelpunkte</string>
+    <string name="menu_matrix">Matrix</string>
+    <string name="menu_spurpunkte">Spurpunkte</string>
+
+    <!-- Spiegelpunkte -->
+    <string-array name="spkt_spinner">
+        <item>Spieglepunkt P&quot;'</item>
+        <item>Mittelpunkt M</item>
+    </string-array>
+
+    <!-- Grundrechenarten -->
+    <string-array name="operatoren">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+        <item>Reset</item>
+    </string-array>
+
+    <string-array name="matrix">
+        <item>Linearkombination</item>
+        <item>LGS Matrixschreibweise</item>
+        <item>Determinante</item>
+    </string-array>
+
+    <string-array name="dimensionen">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>n</item>
+    </string-array>
+
+    <string-array name="nummer">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- Ebenen umwandler -->
+        <string-array name="ebenen_formen">
+            <item>Parameterform</item>
+            <item>Normalform</item>
+            <item>Hessesche Normalform</item>
+            <item>Koordinatenform</item>
+        </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

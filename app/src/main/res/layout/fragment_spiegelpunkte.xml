@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Gesuchter Punkt:"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/spkt_gesucht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/spkt_spinner"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/vektor_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="P("
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/spkt_p1"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="35sp"
+            android:imeOptions="actionNext"
+            app:layout_constraintStart_toEndOf="@id/vektor_p1"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="|"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/spkt_p1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/spkt_p2"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="35sp"
+            android:imeOptions="actionNext"
+            app:layout_constraintStart_toEndOf="@id/tv1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="|"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/spkt_p2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/spkt_p3"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="35sp"
+            android:imeOptions="actionNext"
+            app:layout_constraintStart_toEndOf="@id/tv2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text=")"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/spkt_p3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/vektor_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M("
+            android:textSize="35sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/spkt_m1"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="35sp"
+            android:imeOptions="actionNext"
+            app:layout_constraintStart_toEndOf="@id/vektor_b"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="|"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/spkt_m1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/spkt_m2"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="35sp"
+            android:imeOptions="actionNext"
+            app:layout_constraintStart_toEndOf="@id/tv_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="|"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/spkt_m2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/spkt_m3"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/tv_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text=")"
+            android:textSize="35sp"
+            app:layout_constraintStart_toEndOf="@id/spkt_m3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_berechnen"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="Berechnen" />
+
+    <Button
+        android:id="@+id/btn_zrcksetzen"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:text="zurücksetzen" />
+
+    <TextView
+        android:id="@+id/ergebnis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:textSize="35sp"
+        />
+
+</LinearLayout>

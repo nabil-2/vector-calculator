@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-45dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="38dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="38dp"/>
+
+            </LinearLayout>
+    -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a = "
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textScaleX="0.7"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/v1_1"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v1_2"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v1_3"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textScaleX="0.7"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b = "
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textScaleX="0.7"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/v2_1"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v2_2"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v2_3"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textScaleX="0.7"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c = "
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textScaleX="0.7"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/v3_1"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v3_2"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/v3_3"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textScaleX="0.7"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="110sp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_berechnen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berechnen"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zurücksetzen" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+</LinearLayout>
